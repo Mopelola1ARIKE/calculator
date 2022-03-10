@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: rgb(7, 7, 7);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: null; }
+.item6 { grid-area: num1;}
+.item7 { grid-area: num2;}
+.item8 { grid-area: num3;}
+.item9 { grid-area: minus;}
+.item10 { grid-area: num5;}
+.item11 { grid-area: num6;}
+.item12 { grid-area: num7;}
+.item13 { grid-area: num8;}
+.item14 { grid-area: num9;}
+.item15 { grid-area: num10;}
+.item16 {grid-area: plus;}
+.item17 {grid-area: zero;}
+.item18 {grid-area: zeros;}
+.item19 {grid-area: equal;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'header header header header'
+    'menu menu main right'
+    'num1 num2 num3 minus'
+    'num5 num6 num7 plus'
+    'num8 num9 num10 plus'
+    'zero zeros equal null';
+  gap: 1px;
+  /* background-color: #2196F3; */
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: rgba(168, 151, 151, 0.8);
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 30px;
+}
